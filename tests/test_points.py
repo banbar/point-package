@@ -1,5 +1,5 @@
 import unittest
-from points import euclidean_distance, is_point_inside_polygon, closest_point
+from geometry_utils import euclidean_distance, is_point_inside_polygon, closest_point
 
 class TestPointAnalysis(unittest.TestCase):
     
