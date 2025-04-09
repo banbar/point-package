@@ -1,4 +1,6 @@
 import csv
+import geopandas as gpd
+import pandas as pd
 
 class point:
     def __init__(self, id, latitude, longitude, name):
@@ -31,3 +33,17 @@ def find_point(poi_list, id):
         if(poi_list[i].id == id):
             return (1, poi_list[i])
     return (0, "Not found")
+
+def export_as_geojson(file_name):
+    # Read CSV file
+    df = pd.read_csv(file_name)
+
+    # Convert to GeoDataFrame with Point geometry
+    gdf = gpd.GeoDataFrame(
+        df, 
+        geometry=gpd.points_from_xy(df.longitude, df.latitude),
+        crs="EPSG:4326"  # WGS84 coordinate reference system
+    )
+
+    # Save as GeoJSON
+    gdf.to_file("points.geojson", driver="GeoJSON")

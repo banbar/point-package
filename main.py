@@ -8,3 +8,5 @@ if(query_point[0]):
     print(query_point[1].name)
 else:
     print(query_point[1])
+
+export_as_geojson(file_name)
