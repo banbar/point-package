@@ -25,3 +25,9 @@ def open_points(file):
                   data_list[i][3])
         poi_list.append(p)
     return poi_list
+
+def find_point(poi_list, id):
+    for i in range(len(poi_list)):
+        if(poi_list[i].id == id):
+            return (1, poi_list[i])
+    return (0, "Not found")
