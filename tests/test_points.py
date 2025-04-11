@@ -1,6 +1,6 @@
 import unittest
 from preprocess import *
-from main_second_dev2 import haversine_distance, euclidean_distance
+from haversine_dev2 import haversine_distance, euclidean_distance
 
 class TestPointAnalysis(unittest.TestCase):
     
