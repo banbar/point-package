@@ -1,0 +1,14 @@
+{
+"type": "FeatureCollection",
+"name": "points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "A", "latitude": 58.3810108, "longitude": 26.7187655, "name": "Art Museum" }, "geometry": { "type": "Point", "coordinates": [ 26.7187655, 58.3810108 ] } },
+{ "type": "Feature", "properties": { "id": "B", "latitude": 58.3807102, "longitude": 26.7172642, "name": "University of Tartu Museum" }, "geometry": { "type": "Point", "coordinates": [ 26.7172642, 58.3807102 ] } },
+{ "type": "Feature", "properties": { "id": "C", "latitude": 58.386148, "longitude": 26.721637, "name": "Loodusteadlase Theodor Lippmaa" }, "geometry": { "type": "Point", "coordinates": [ 26.721637, 58.386148 ] } },
+{ "type": "Feature", "properties": { "id": "D", "latitude": 58.377351, "longitude": 26.733954, "name": "AHHAA Science Centre" }, "geometry": { "type": "Point", "coordinates": [ 26.733954, 58.377351 ] } },
+{ "type": "Feature", "properties": { "id": "E", "latitude": 58.367123, "longitude": 26.713763, "name": "Tamme stadium" }, "geometry": { "type": "Point", "coordinates": [ 26.713763, 58.367123 ] } },
+{ "type": "Feature", "properties": { "id": "F", "latitude": 58.390703, "longitude": 26.704664, "name": "Tähtvere spordipark" }, "geometry": { "type": "Point", "coordinates": [ 26.704664, 58.390703 ] } },
+{ "type": "Feature", "properties": { "id": "G", "latitude": 58.394437, "longitude": 26.74243, "name": "Tagurpidi Maja" }, "geometry": { "type": "Point", "coordinates": [ 26.74243, 58.394437 ] } }
+]
+}
