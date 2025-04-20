@@ -1,4 +1,6 @@
 from preprocess import *
+from haversine import haversine, Unit
+
 import math
 
 def euclidean_distance(p1, p2):
@@ -30,7 +32,6 @@ def haversine_distance(lat1, lon1, lat2, lon2, unit='km'):
     
     return R * c
 
-file_name =  'coordinates.csv'
-points = open_points(file_name)
 
-print("Distance between A&B: ", haversine_distance( points[0].lat, points[0].lon, points[1].lat, points[1].lon  ) )
+
+
