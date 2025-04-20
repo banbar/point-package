@@ -12,13 +12,12 @@ class TestPointAnalysis(unittest.TestCase):
     
     def test_haversine_package(self):
         self.assertLessEqual(haversine(self.point_a, self.point_b), 0.095)
-        
+
     def test_euclidean_distance(self):
         p1 = point("A", 0,0, "A")
         p2 = point("B", 3,4, "B")
         self.assertEqual(euclidean_distance(p1,p2), 5)
 
-    
 if __name__ == "__main__":
     unittest.main()
 
